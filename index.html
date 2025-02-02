@@ -1,63 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torneio Pokémon</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/pokeapi-js-wrapper/dist/index.min.js"></script>
-    <script src="./scripts/tournament.js" type="module" defer></script>
-    <script src="./scripts/helpers.js" type="module" defer></script>
-    <script src="./scripts/types.js" type="module" defer></script>
-    <script src="./scripts/ui.js" type="module" defer></script>
-    
-    
-</head>
-<body>
-    <header class="instructions">
-        <h1>Bem-vindo ao Pokémon Tournament!</h1>
-        <p>
-            Escolha um tipo de Pokémon usando os botões abaixo.<br>
-            Em seguida, selecione o seu favorito dentre as opções apresentadas até que termine.<br>
-            O resultado com o seu top 3 do tipo selecionado será exibido na tabela de resultados.<br>
-            Divirta-se!
-        </p>
-    </header>
-    <div class="type-buttons">
-        <!-- Botões dos tipos de Pokémon serão gerados aqui -->
-    </div>
-
-    <div class="arena">
-        <h2 id="type-title">Torneio: </h2>
-        <div class="pokemon-choice">
-            <div id="pokemon-1" class="evolution-line">
-                <h3 id="pokemon-1-name">Pokemon 1</h3>
-                <div id="pokemon-1-evolutions"></div>
-                <button id="choose-1">Escolher</button>
-            </div>
-            <div id="pokemon-2" class="evolution-line">
-                <h3 id="pokemon-2-name">Pokemon 2</h3>
-                <div id="pokemon-2-evolutions"></div>
-                <button id="choose-2">Escolher</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="results">
-        <h2>Resultados:</h2>
-        <table id="results-container">
-            <thead>
-                <tr>
-                    <th>Tipo</th>
-                    <th>Top 1</th>
-                    <th>Top 2</th>
-                    <th>Top 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Resultados por tipo serão inseridos aqui -->
-            </tbody>
-        </table>
-    </div>    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
